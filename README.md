@@ -2,6 +2,7 @@
 Particule swarm optimization sandbox
 
 Contexte
+
 L'optimisation par essaim de particules (particle swarm optimization - PSO dans la suite du texte) est fondée sur une famille d'algorithmes stochastiques basés sur une population [dite particulaire], et inspirés par le comportement collectif de certains animaux comme les nuées d'oiseaux, les bancs de poissons, les abeilles, etc …
 Ces essaims ont un comportement coopératif, par exemple pour la recherche de nourriture, chaque « particule » de l'essaim réagissant à ses propres perceptions, mais également à celles des autres « particules » par communication.
 
@@ -16,6 +17,7 @@ Le champ d'étude théorique reste ouvert, notamment pour la détermination a pr
 Ci-après un lien vers un toy model en Python : https://github.com/denix59/swarm
 
 Présentation d'un algorithme de base
+
 L'algorithme présenté est celui d'Eberhart et Shi (A modified particle swarm optimizer – 1998).
 
 Chaque particule « i » est définie par un vecteur position Xi et un vecteur vitesse de déplacement Vi.
@@ -37,6 +39,7 @@ Le second terme modélise la perception de la particule par rapport à l'objecti
 Le troisième terme modélise l'influence de l'essaim sur la particule (terme de « communication »).
 
 Test
+
 Pour l'exemple Python, on utilise une fonction de Rastrigin dont on recherche la valeur minimale absolue.
 Les coordonnées objectif sont 0, 0.
 Sur le graphe animé, G est représenté par une X, les positions des particules par O, et les vitesses par des flèches (direction et module).
