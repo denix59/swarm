@@ -14,8 +14,6 @@ Ils restent curieusement assez peu utilisés, peut-être parce que le choix des 
 
 Le champ d'étude théorique reste ouvert, notamment pour la détermination a priori des plages de paramètres, et l'application à des problèmes discrets, multi-objectifs, contraints, ou dynamiques.
 
-Ci-après un lien vers un toy model en Python : https://github.com/denix59/swarm
-
 Présentation d'un algorithme de base
 
 L'algorithme présenté est celui d'Eberhart et Shi (A modified particle swarm optimizer – 1998).
@@ -27,6 +25,7 @@ A l'ensemble des particules est associée la meilleure dernière position absolu
 L'évolution de ces vecteurs est calculée comme suit :
 
 Vi = w.Vi + c1.rand1[0 ..1].(Pi – Xi) + c2.rand2[0 ,, 1].(G – Xi)
+
 Xi = Xi + Vi
 
 w, c1, c2 sont des constantes scalaires
